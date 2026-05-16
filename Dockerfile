@@ -5,4 +5,4 @@ VOLUME ["/piston/packages"]
 
 EXPOSE 2000
 
-CMD ["node", "/piston/api/src/index.js"]
+CMD ["node", "/api/src/index.js"]
