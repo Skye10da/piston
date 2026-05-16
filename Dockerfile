@@ -31,8 +31,9 @@ WORKDIR /piston/api
 # Install API dependencies
 RUN npm install
 
-# Create necessary directories
-RUN mkdir -p /piston/packages && \
+# Create packages dir clean (remove any .gitignore or stray files)
+RUN rm -rf /piston/packages && \
+    mkdir -p /piston/packages && \
     mkdir -p /tmp/piston
 
 EXPOSE 2000
