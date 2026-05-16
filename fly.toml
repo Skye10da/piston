@@ -1,10 +1,12 @@
-# fly.toml app configuration file generated for piston-qxbuja on 2026-05-16T14:49:25Z
+# fly.toml app configuration file generated for piston-w3oxlg on 2026-05-16T16:52:45Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'piston-qxbuja'
-primary_region = 'jnb'
+app = 'piston-w3oxlg'
+primary_region = 'ams'
+
+[experimental]
 
 [build]
 
@@ -25,5 +27,3 @@ primary_region = 'jnb'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
-[experimental]
-  privileged = true
